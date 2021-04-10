@@ -1,6 +1,7 @@
 # TelegramBot-UrFU-Pik-IT
 
 Демо Telegram: @UrFUDailyProblembot
+Работает небыстро, ввиду запуска бота на Raspberry PI 4B
 
 **Фичи**
 * Whitelist расширений загружаемых файлов
