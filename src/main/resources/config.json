@@ -1,0 +1,100 @@
+{
+  "botUsername": "UrFUDailyProblembot",
+  "botToken": "1746104109:AAF5pU7nczHCNIr17tT3SNBa3bfyrHDmxA8",
+  "patterns": {
+    "name": "([A-ZА-Я]{1}[a-zа-я]+)( [A-ZА-Я]{1}[a-zа-я]+)+",
+    "email": "([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}",
+    "password": "(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}",
+    "studentId": "[\\d]{8}",
+    "descriptionMinLength": 20,
+    "titleMinLength": 3,
+    "titleAutoMaxLength": 16
+  },
+  "timers": {
+    "newTaskTimerPeriodMillis": 10000,
+    "sessionTimerPeriodMillis": 300000,
+    "afkThresholdMinutes": 70,
+    "editTaskTimerPeriodMillis": 10000
+  },
+  "showVoteTasksAtOnce": 1,
+  "showAllTasksAtOnce": 2,
+  "showMyTasksAtOnce": 2,
+  "showEditTasksAtOnce": 2,
+  "showEditingTasksAtOnce": 2,
+  "loadedFileMaxSizeBytes": 8388608,
+  "loadedFilesWhitelist": [
+    "image/jpeg",
+    "image/png",
+    "image/bmp",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/msword",
+    "text/plain",
+    "application/x-yaml",
+    "application/json",
+    "application/zip",
+    "application/rar",
+    "application/7z",
+    "application/pdf",
+    "application/rtf"
+  ],
+  "taskStatus": {
+    "new": {
+      "displayName": "Новая"
+    },
+    "moderating": {
+      "displayName": "Модерация"
+    },
+    "voting_students": {
+      "displayName": "Голосование (студенческий состав)"
+    },
+    "voting_experts": {
+      "displayName": "Голосование (экспертный состав)"
+    },
+    "in_process": {
+      "displayName": "Осуществление работ"
+    },
+    "done": {
+      "displayName": "Выполнена"
+    },
+    "non_active": {
+      "displayName": "Неактивна"
+    }
+  },
+  "role": {
+    "user": {
+      "displayName": "Пользователь",
+      "permissions": [
+        "task.create",
+        "task.remove.self",
+        "task.vote.student",
+        "task.see.self",
+        "task.see.all"
+      ]
+    },
+    "expert": {
+      "displayName": "Эксперт",
+      "permissions": [
+        "task.vote.expert",
+        "task.see.all"
+      ]
+    },
+    "moder": {
+      "displayName": "Модератор",
+      "permissions": [
+        "task.remove.other",
+        "task.edit.other",
+        "task.edit.editing",
+        "task.see.all"
+      ]
+    },
+    "root": {
+      "displayName": "Супер-пользователь",
+      "permissions": [
+        "*"
+      ]
+    }
+  },
+  "simpleDateFormat": "dd.MM.yyyy HH:mm:ss z Z"
+}
