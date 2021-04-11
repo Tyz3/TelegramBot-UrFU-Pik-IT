@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Downloader {
 
-    public static final String DOWNLOAD_DIR = "D:\\Intelli Workspace\\Java\\DailyProblem\\src\\ru.DailyProblemBot.main\\resources\\";
+    public static final String DOWNLOAD_DIR = "/";
 
     private static String readAll(Reader rd) throws IOException {
 
